@@ -12,16 +12,41 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
+    <%= form.label :"Email" %>
     <%= form.text_field :email %>
   </div>
 
+  <div class="field" >
+    <%= form.label :"Nhập mã sv" %>
+    <%= form.text_field :masv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :"Mật khẩu" %>
+    <%= form.password_field :matkhau %>
+  </div>
+
+  <div class="field" hidden="">
+    <%= form.text_field :lop %>
+  </div>
+
+  <div class="field" hidden="">
+    <%= form.text_field :hoten %>
+  </div>
+
+  <div class="field" hidden="">
+    <%= form.text_field :thuongtru %>
+  </div>
+
+  <div class="field" hidden=""> 
+    <%= form.text_field :namsinh_at %>
+  </div>
+
+  <div class="field" hidden=""> 
+    <%= form.text_field :sdt %>
+  </div>
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :"Đăng ký" %>
   </div>
 <% end %>

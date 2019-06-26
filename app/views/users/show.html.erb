@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<p>
+  <strong>Mã số sinh viên:</strong>
+  <%= @user.masv %>
+</p>
+
+<%= link_to 'Sửa', edit_user_path(@user) %> |
+<%= link_to 'Quay lại', users_path %>
