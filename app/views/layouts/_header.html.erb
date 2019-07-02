@@ -11,9 +11,9 @@
     </a>
     <%= link_to "Đăng kí", signup_path, class:"w3-bar-item w3-button" , style:"color:yellow"%>
     <%= link_to "Đăng nhập", login_path, class:"w3-bar-item w3-button" , style:"color:yellow"%>
-    <%= link_to "Liên hệ", '#', class:"w3-bar-item w3-button" , style:"color:yellow"%>
+    <%= link_to "Liên hệ", '#', class:"w3-bar-item w3-button" , style:"color:yellow "%>
             <% if logged_in? %>
-    <li><%= link_to "Log out", logout_path, method: :delete %></li>
+    <%= link_to "Đăng xuất", logout_path, method: :delete, class:"w3-bar-item w3-button" , style:"color:yellow; float:right" %>
     <% end %>
     </a>
   </div>
