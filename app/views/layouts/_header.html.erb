@@ -10,7 +10,7 @@
       <i class="fa fa-bars"></i>
     </a>
     <%= link_to "Đăng kí", signup_path, class:"w3-bar-item w3-button" , style:"color:yellow"%>
-    <%= link_to "Đăng nhập", '#', class:"w3-bar-item w3-button" , style:"color:yellow"%>
+    <%= link_to "Đăng nhập", login_path, class:"w3-bar-item w3-button" , style:"color:yellow"%>
     <%= link_to "Liên hệ", '#', class:"w3-bar-item w3-button" , style:"color:yellow"%>
     </a>
   </div>
@@ -22,3 +22,4 @@
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Thư<span class="w3-hide-small">Viện</span>^^</span>
   </div>
 </div>
+ <%= render 'layouts/shim' %>

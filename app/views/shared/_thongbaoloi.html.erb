@@ -1,0 +1,12 @@
+<% if object.errors.any? %>
+  <div id="error_explanation" style=" text-align: -moz-center">
+    <div class="alert alert-danger">
+      Vui lòng kiểm tra lại, form có <%= pluralize(object.errors.count, "lỗi") %>.
+    </div>
+    <ul>
+    <% object.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

@@ -55,7 +55,9 @@ div {
   background-color: red;
   display: table;
 }
-
+form{
+  text-align: -moz-center;
+}
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -124,5 +126,19 @@ body, html {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
+  }
+}
+ /* loi */ 
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  .form-control {
+    color: white;
   }
 }
