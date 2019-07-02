@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_26_043337) do
+ActiveRecord::Schema.define(version: 2019_07_02_071356) do
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "hoten"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2019_06_26_043337) do
     t.datetime "updated_at", null: false
     t.datetime "namsinh_at"
     t.boolean "admin", default: false
+    t.string "password_digest"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["masv"], name: "index_users_on_masv", unique: true
   end

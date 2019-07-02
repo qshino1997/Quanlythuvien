@@ -1,17 +1,20 @@
 class SessionsController < ApplicationController
+ 
   def logining   
     if
-    user = User.find_by(email: params[:session][:email].downcase)
-    if user && user.authenticate(params[:session][:matkhau])
-      render 'static_pages/home'
-      log_in user
+      user = User.where(:email => params[:session][:email]).first
+      if user && user.authenticate(params[:session][:password])
+        log_in user
+        render 'static_pages/home'
+      else
+        flash[:danger] = 'Mat khau khong dung'
+        render 'login'
+      end
     else
-      # Create an error message.
-      render 'login'
+        flash[:danger] = 'Dia chi email khong dung '
+        render 'login'
     end
-    render 'login'
   end
-end
 
   def login
   end  

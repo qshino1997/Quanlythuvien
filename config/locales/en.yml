@@ -38,4 +38,5 @@ en:
       user:
         email: "Địa chỉ email" 
         masv: "Mã số sinh viên"
-        matkhau: "Mật khẩu"
+        password: "Mật khẩu"
+        
