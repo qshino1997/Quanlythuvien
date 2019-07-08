@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  borrow_id: 1
+  thoigianmuon: 2019-07-03 09:06:59
+  thoigiantra: 2019-07-03 09:06:59
+
+two:
+  borrow_id: 1
+  thoigianmuon: 2019-07-03 09:06:59
+  thoigiantra: 2019-07-03 09:06:59

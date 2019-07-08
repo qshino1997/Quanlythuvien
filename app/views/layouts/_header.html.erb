@@ -9,11 +9,16 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
+   
+    <% if logged_in? %>
+    <%= link_to "Thêm sách mới", themmoi_path, class:"w3-bar-item w3-button" , style:"color:yellow;" %>
+    <%= link_to "Thêm thể loại mới", loaimoi_path, class:"w3-bar-item w3-button" , style:"color:yellow;" %>
+    <%= link_to "Mã nhận dạng", nhandangmoi_path,class:"w3-bar-item w3-button" , style:"color:yellow;" %>
+    <%= link_to "Đăng xuất", logout_path, method: :delete, class:"w3-bar-item w3-button" , style:"color:yellow; float:right" %>
+    <% else %>
     <%= link_to "Đăng kí", signup_path, class:"w3-bar-item w3-button" , style:"color:yellow"%>
     <%= link_to "Đăng nhập", login_path, class:"w3-bar-item w3-button" , style:"color:yellow"%>
     <%= link_to "Liên hệ", '#', class:"w3-bar-item w3-button" , style:"color:yellow "%>
-            <% if logged_in? %>
-    <%= link_to "Đăng xuất", logout_path, method: :delete, class:"w3-bar-item w3-button" , style:"color:yellow; float:right" %>
     <% end %>
     </a>
   </div>

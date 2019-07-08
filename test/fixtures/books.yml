@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tieude: MyString
+  tacgia: MyString
+  namxuatbang: 2019-07-03
+  mota: MyString
+  gia: 1.5
+  catogary_id: 1
+
+two:
+  tieude: MyString
+  tacgia: MyString
+  namxuatbang: 2019-07-03
+  mota: MyString
+  gia: 1.5
+  catogary_id: 1
