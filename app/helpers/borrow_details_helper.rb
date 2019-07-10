@@ -1,0 +1,2 @@
+module BorrowDetailsHelper
+end

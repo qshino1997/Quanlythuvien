@@ -15,6 +15,9 @@ class SessionsController < ApplicationController
         render 'login'
     end
   end
+  def admin
+
+  end
 
   def login
   end  
